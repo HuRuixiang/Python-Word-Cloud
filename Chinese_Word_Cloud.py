@@ -6,11 +6,11 @@ import numpy as np
 from PIL import Image
 
 #读取文本
-with open("C:\\Users\\问津\\Desktop\\新建文本文档.txt","r") as f:
+with open("新建文本文档.txt","r") as f:
     text = f.read()
 wt = " ".join(jieba.lcut(text))
 #载入轮廓图
-mask = np.array(Image.open("C:\\Users\\问津\\Desktop\\Picture\\0DSCF1236.png"))
+mask = np.array(Image.open("1.png"))
 #生成词云
 wcd = WordCloud(background_color=None,height=500,width=500,font_path="fonts/msyh.ttc",
                 colormap="Reds",mask=mask,mode="RGBA",repeat=True)
