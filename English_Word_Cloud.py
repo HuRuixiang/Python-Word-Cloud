@@ -2,7 +2,7 @@
 from wordcloud import WordCloud
 
 #读取文本
-with open("yes-minister.txt","r",encoding='UTF-8') as f:
+with open("新建文本文档.txt","r",encoding='UTF-8') as f:
     text = f.read()
 #生成词云
 wcd = WordCloud(background_color="white",height=500,width=500)
